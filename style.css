@@ -1,0 +1,356 @@
+*{
+    font-family:cursive;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+header {
+    background-color: rgba(30, 255, 0, 0.3);
+    width: 100%;
+    position: fixed;
+    z-index:999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    padding-left: 10%;
+    padding-right: 5%;
+}
+.logo{
+    text-decoration: none;
+    color:black;
+    text-transform: uppercase;
+    font-weight:bold;
+    font-size: 2em;
+    margin-right: 40px;
+    letter-spacing: 2px;
+}
+.nav a{
+    color:rgb(6, 6, 108) ;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-left: 40px;
+}
+.nav a:hover{
+    color: #065d75;
+}
+section{
+    padding: 100px 10%;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-behavior: smooth;
+    position: relative;
+}
+.main{
+    background-attachment: fixed;
+    background-image: linear-gradient(to left, rgba(111, 107, 111, 0), rgba(0, 0, 0, 0)),url(game_m2.webp);
+}
+.main:hover{
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.726)),url(game_m2.webp);
+}
+.main h2{
+    color: aliceblue;
+    font-size: 5em;
+    font-weight: 600;
+}
+.main p{
+    width: 40%;
+    font-size: 1.5em;
+    font-weight: 650;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+.CLICK{
+    color: aliceblue;
+    background-color: #1500ff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 700;
+    display: inline-block;
+    padding: 0.9em 2.1em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+.CLICK:hover{
+    background-color: #0004ff6e;
+    transform: scale(1.1);
+}
+.About{
+    padding: 100px 30px;
+    background-image: linear-gradient(to left, rgba(111, 107, 111, 0), rgba(0, 0, 0, 0)),url(game_m1.jpg);
+    scroll-behavior: smooth;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.game-card{
+    background-color: #fff;
+    width: 10em;
+    box-shadow: 0 5px 25px rgb(0, 42, 255);
+    padding: 5px;
+    border-radius: 10px;
+    margin: 30px;
+    transition: 0.7s ease;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;   
+}
+.game-card:hover{
+    transform: scale(1.02);
+    box-shadow: 0 5px 25px red;
+    a{
+        background-color: red;
+     }
+}
+.img_div img{
+    border-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+}
+.game-card a{
+    border-radius: 5px;
+    color: aliceblue;
+    background-color: #1500ff;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-block;
+    letter-spacing: 1px;
+    padding: 5px;
+    transition: 0.7s ease;
+}
+.game-card a:hover{
+    transform: scale(1.02);
+    background-color: #1500ff;
+}
+
+
+footer{
+    width: 100%;
+    min-height: 12vh;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.847);
+    padding: 10px 0px;
+    padding-left: 2%;
+    justify-content: space-between;
+    padding-right: 2%;
+}
+footer a{
+    color: beige;
+    font-size: 1.3em;
+    margin-right: 20px;
+    margin-left: 20px;    
+}
+footer a:hover{
+    color:rgb(0, 0, 255) ;
+}
+footer p{
+    width: 60%;
+}
+footer p span{
+    font-weight: 500px;
+    color: aliceblue;
+}
+/* ------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+@media (max-width:1100px) and (min-width: 800px) {
+    .main p{
+        width: 60%; 
+    }
+}
+@media (max-width:800px) and (min-width: 600px) {
+    .main p{
+        width: 70%; 
+    }
+    .logo{
+        font-size: 1.8em;
+        margin-right: 10px;
+        letter-spacing: 2px;
+    }
+    .main h2{
+        font-size: 4em;
+    }
+    .nav a{
+        font-size: 1.2em;
+        margin-left: 20px;
+    }
+    footer a{
+        margin-right: 15px;
+        margin-left: 15px;    
+    }
+    footer p{
+        width: 60%;
+    }
+}
+@media (max-width:600px) and (min-width:520px ) {
+    .main p{
+        width: 80%; 
+    }
+    header {
+        padding-left: 4%;
+    }
+    .logo{
+        font-size: 1.8em;
+        margin-right: 10px;
+        letter-spacing: 2px;
+    }
+    .main h2{
+        font-size: 3.5em;
+    }
+    .nav a{
+        font-size: 1.1em;
+        margin-left: 15px;
+    }
+    footer a{
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: 1.1em;    
+    }
+    footer p{
+        width: 60%;
+        font-size: 0.8em;
+    }
+    section{
+        padding-left: 5%;
+        padding-right: 5%;
+
+    }
+}
+@media (max-width:520px) and (min-width:300px ) {
+    .main p{
+        width: 70%; 
+        font-size: 1.2em;
+    }
+    header {
+        padding-left: 4%;
+        padding-right: 2%;
+
+    }
+    .logo{
+        font-size: 1.4em;
+        margin-right: 10px;
+        letter-spacing: 2px;
+    }
+    .main h2{
+        font-size: 2.5em;
+    }
+    .nav a{
+        font-size: 0.9em;
+        margin-left: 8px;
+    }
+    footer a{
+        margin-right: 5px;
+        margin-left: 5px;
+        font-size: 1em;    
+    }
+    footer p{
+        width: 60%;
+        font-size: 0.7em;
+    }
+    section{
+        padding-left: 5%;
+        padding-right: 5%;
+
+    }
+    .About{
+        padding: 10px 30px;
+        scroll-behavior: smooth;
+    }
+    .game-card{
+        width: 5em;
+        padding: 3px;
+        border-radius: 10px;
+        margin: 10px;   
+    }
+    .game-card a{
+        border-radius: 5px;
+        font-weight: 500;
+        font-size: 0.7em;
+        padding: 3px;
+    }
+    .CLICK{
+        font-size: 1.2em;
+        font-weight: 600;
+        padding: 0.8em 1.5em;
+        border-radius: 10px;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width:380px) and (min-width:0px ) {
+    .main p{
+        width: 90%; 
+        font-size: 1.1em;
+    }
+    header {
+        padding-left: 1%;
+        padding-right: 1%;
+
+    }
+    .logo{
+        font-size: 1.1em;
+        margin-right: 5px;
+        letter-spacing: 1px;
+    }
+    .main h2{
+        font-size: 2.3em;
+    }
+    .nav a{
+        font-size: 0.8em;
+        margin-left: 4px;
+    }
+    footer a{
+        margin-right: 3px;
+        margin-left: 3px;
+        font-size: 0.9em;    
+    }
+    footer p{
+        width: 60%;
+        font-size: 0.7em;
+    }
+    section{
+        padding-left: 5%;
+        padding-right: 5%;
+
+    }
+    .About{
+        padding: 10px 30px;
+        scroll-behavior: smooth;
+    }
+    .game-card{
+        width: 4em;
+        padding: 3px;
+        border-radius: 10px;
+        margin: 5px;   
+    }
+    .game-card a{
+        border-radius: 5px;
+        font-weight: 500;
+        font-size: 0.5em;
+        padding: 3px;
+    }
+    .CLICK{
+        font-size: 1.2em;
+        font-weight: 600;
+        padding: 0.8em 1.5em;
+        border-radius: 10px;
+        margin-bottom: 40px;
+    }
+}
